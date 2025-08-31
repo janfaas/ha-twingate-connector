@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -e
+
+echo "🚀 Starting Twingate Connector..."
+
+twingate-connector \
+  --network "${NETWORK}" \
+  --access-token "${ACCESS_TOKEN}" \
+  --refresh-token "${REFRESH_TOKEN}"

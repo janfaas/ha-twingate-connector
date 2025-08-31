@@ -1,0 +1,16 @@
+name: "Twingate Connector"
+version: "1.0.1"
+slug: "twingate_connector"
+description: "Run a Twingate Connector inside Home Assistant OS"
+startup: services
+boot: auto
+arch:
+  - aarch64
+options:
+  network: "janfaas20.twingate.com"
+  access_token: "eyJhbGciOiJFUzI1NiIsImtpZCI6ImZBRm54M3dEeEwzT2M3WnZkZkFSWk1rVm5mdWhUM3QxV1NyNzgyTVprWW8iLCJ0eXAiOiJEQVQifQ.eyJudCI6IkFOIiwiYWlkIjoiNTg5NDczIiwiZGlkIjoiMjQ3NzkyMiIsInJudyI6MTc1NjYyNTUwMywianRpIjoiNzFmYTBhYjYtYzNmYS00MWI5LTg0ZDYtODViYWNjYmUzZjI4IiwiaXNzIjoidHdpbmdhdGUiLCJhdWQiOiJqYW5mYWFzMjAiLCJleHAiOjE3NTY2Mjg4MTcsImlhdCI6MTc1NjYyNTIxNywidmVyIjoiNCIsInRpZCI6IjE3MDQ0NCIsInJuZXRpZCI6IjIyNDg0NiJ9.vROVD64gZVmyIf6pMa0aTCftfD4yeYhQKGpSUqpGu7ofIkq-rhYlqTNUnx50G--eGThUE8ij9oZ766I7VrRgEg"
+  refresh_token: "-rXItuMFSrrEnrO0es-9JktDhCIVDgmtEGkXrLaE_AeL5Y2JxOi5lHRJJJU0lStkplCdmaE3UncrMtR4wGtxRD1CX8a1ItrX-yzBqjpyDrb7y6FlsHizBBzOqy6kscD_q-zYxg"
+schema:
+  network: str
+  access_token: password
+  refresh_token: password
